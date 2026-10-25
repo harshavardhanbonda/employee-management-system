@@ -155,7 +155,7 @@ Java Full-Stack Developer
 ![Registration Page](screenshots/register.png)
 
 ### Employee Dashboard
-![Employee Dashboard](screenshots/employee-dashboard.png)
+![Employee Dashboard](screenshots/employee-dasboard.png)
 
 ### Add Employee
 ![Add Employee](screenshots/add-employee.png)
