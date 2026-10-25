@@ -143,3 +143,26 @@ Potential enhancements include:
 Java Full-Stack Developer
 
 [GitHub Profile](https://github.com/harshavardhanbonda)
+
+
+
+## Application Screenshots
+
+### Login
+![Login Page](screenshots/login.png)
+
+### Registration
+![Registration Page](screenshots/register.png)
+
+### Employee Dashboard
+![Employee Dashboard](screenshots/dashboard.png)
+
+### Add Employee
+![Add Employee](screenshots/add-employee.png)
+
+### Update Employee
+![Update Employee](screenshots/update-employee.png)
+
+### Delete Employee
+![Delete Employee](screenshots/delete-employee.png)
+
