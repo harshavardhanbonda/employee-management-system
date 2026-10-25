@@ -1,0 +1,125 @@
+
+.register-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    box-sizing: border-box;
+    background: #080d17;
+    color: #e5efff;
+}
+
+.register-card {
+    width: 100%;
+    max-width: 480px;
+    padding: 36px;
+    box-sizing: border-box;
+    background: #0b1220;
+    border: 1px solid #31517e;
+    border-radius: 16px;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+}
+
+.register-card h1 {
+    margin: 0 0 10px;
+    text-align: center;
+    font-size: 28px;
+    color: #e5efff;
+}
+
+.register-subtitle {
+    margin: 0 0 28px;
+    text-align: center;
+    color: #93a9c7;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.register-form input {
+    width: 100%;
+    padding: 13px 14px;
+    box-sizing: border-box;
+    background: #101b2d;
+    color: #e5efff;
+    border: 1px solid #31517e;
+    border-radius: 7px;
+    outline: none;
+    font-size: 14px;
+}
+
+.register-form input::placeholder {
+    color: #8193ad;
+}
+
+.register-form input:focus {
+    border-color: #60a5fa;
+    box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.15);
+}
+
+.register-form button {
+    padding: 13px;
+    margin-top: 4px;
+    background: #14233b;
+    color: #93c5fd;
+    border: 1px solid #31517e;
+    border-radius: 7px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, border-color 0.2s;
+}
+
+.register-form button:hover:not(:disabled) {
+    background: #1a3152;
+    border-color: #60a5fa;
+}
+
+.register-form button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.register-error {
+    margin: 0;
+    padding: 11px;
+    overflow-wrap: anywhere;
+    color: #fca5a5;
+    background: rgba(239, 68, 68, 0.08);
+    border: 1px solid rgba(239, 68, 68, 0.4);
+    border-radius: 7px;
+    font-size: 13px;
+}
+
+.register-footer {
+    margin: 24px 0 0;
+    text-align: center;
+    color: #93a9c7;
+    font-size: 14px;
+}
+
+.register-footer a {
+    color: #60a5fa;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.register-footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+    .register-card {
+        padding: 24px;
+    }
+
+    .register-card h1 {
+        font-size: 24px;
+    }
+}
