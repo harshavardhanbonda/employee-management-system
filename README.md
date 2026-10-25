@@ -1,85 +1,145 @@
 # Employee Management System
 
-A full-stack Employee Management System built with React, Spring Boot, PostgreSQL, and JWT authentication.
+A full-stack Employee Management System built with React, Spring Boot, and PostgreSQL. This project demonstrates frontend and backend integration, REST API development, database operations, and JWT-based authentication.
 
-## Tech Stack
+## Overview
 
-**Frontend**
-- React
-- JavaScript
-- CSS
-- React Router
+The application provides an interface for managing employee records through a React frontend connected to a Spring Boot backend.
 
-**Backend**
-- Java
-- Spring Boot
-- Spring Data JPA
-- Spring Security and JWT
+## Technology Stack
 
-**Database**
-- PostgreSQL
+| Layer | Technologies |
+|---|---|
+| Frontend | React, JavaScript, CSS |
+| Backend | Java, Spring Boot |
+| API | REST APIs |
+| Database | PostgreSQL |
+| Authentication | JWT |
+| Build Tool | Gradle |
+| Version Control | Git, GitHub |
 
 ## Features
 
 - User registration and login
 - JWT-based authentication
-- Protected dashboard route
-- View employees
+- Protected dashboard routing
+- View employee records
 - Add new employees
-- Update employee details
-- Delete employees
+- Update existing employee details
+- Delete employee records
 - Sort employees by ID
-- Employee dashboard with summary statistics
+- Employee data persistence using PostgreSQL
 
 ## Project Structure
 
 ```text
 employee-management-system/
 ├── employee-frontend/
+│   ├── src/
+│   ├── public/
+│   ├── package.json
+│   └── package-lock.json
+│
 └── employee-service/
+    ├── src/
+    │   └── main/
+    │       ├── java/
+    │       └── resources/
+    │           └── application.properties
+    ├── gradle/
+    │   └── wrapper/
+    ├── build.gradle
+    ├── settings.gradle
+    ├── gradlew
+    └── gradlew.bat
 ```
 
 ## Prerequisites
 
+Before running the application, install:
+
+- Java version compatible with the backend project
 - Node.js and npm
-- Java and Gradle
 - PostgreSQL
 
-## Setup
+## Getting Started
 
-### 1. Backend
-
-Configure your database connection and JWT signing secret using environment variables. Do not commit actual credentials.
-
-From the backend directory, run:
+### 1. Clone the repository
 
 ```bash
-./gradlew bootRun
+git clone https://github.com/harshavardhanbonda/employee-management-system.git
+cd employee-management-system
 ```
 
-On Windows, use:
+### 2. Configure the database
+
+Create a PostgreSQL database for the application.
+
+Configure the following environment variables for the backend:
+
+- `DB_URL` — PostgreSQL JDBC connection URL
+- `DB_USERNAME` — PostgreSQL username
+- `DB_PASSWORD` — PostgreSQL password
+- `JWT_SECRET` — Secret used for JWT signing
+
+The backend's `application.properties` should reference these environment variables rather than contain actual credentials.
+
+### 3. Run the backend
+
+Open a terminal in the `employee-service` directory.
+
+On Windows PowerShell:
 
 ```powershell
 .\gradlew.bat bootRun
 ```
 
-### 2. Frontend
+On macOS or Linux:
 
-From the frontend directory, install dependencies and start the development server:
+```bash
+./gradlew bootRun
+```
+
+Make sure PostgreSQL is running and the required environment variables are configured before starting the backend.
+
+### 4. Run the frontend
+
+Open another terminal in the `employee-frontend` directory.
+
+Install dependencies:
 
 ```bash
 npm install
+```
+
+Start the development server:
+
+```bash
 npm run dev
 ```
 
-### 3. Access the application
+Open the local URL displayed in the terminal by Vite.
 
-Open the local URL printed by Vite in your terminal.
+## Security Notes
 
-## Security
+- Do not commit database passwords, JWT signing secrets, or other sensitive credentials.
+- Configure authentication secrets through environment variables.
+- The backend must validate JWTs and enforce authorization on protected API endpoints.
 
-Never commit database passwords, JWT signing secrets, or other sensitive credentials to source control.
+## Future Improvements
+
+Potential enhancements include:
+
+- Employee search and filtering
+- Pagination
+- Automated tests
+- Application deployment
+- Improved input validation and error handling
 
 ## Author
 
-Created as a full-stack learning project.
+**Bonda Harsha Vardhan**
+
+Java Full-Stack Developer
+
+[GitHub Profile](https://github.com/harshavardhanbonda)
